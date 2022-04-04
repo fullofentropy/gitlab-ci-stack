@@ -35,9 +35,9 @@
     pip:
       name: docker-compose
 
-  - name: Add vagrant user to docker group.
+  - name: Add user to docker group.
     user:
-      name: vagrant
+      name: gitlab
       groups: docker
       append: yes
     become: true
